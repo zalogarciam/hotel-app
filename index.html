@@ -8,9 +8,11 @@
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 
   <link rel="stylesheet" href="./css/index.css">
+
   <title>Hotel</title>
 </head>
 
@@ -65,7 +67,6 @@
             <img src="./img/20.jpeg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Familia felices</h5>
-              <p>Some representative placeholder content for the third slide.</p>
             </div>
           </div>
         </div>
@@ -111,7 +112,7 @@
               personas dentro y fuera del hotel debe ser organizado las 24 horas del día. En las organizaciones de
               servicios de restauración, comunicación y consumo, se atiende prioritariamente a las personas alojadas en
               el hotel.</p>
-            <a href="#reservartion" class="btn icon-color btn-lg btn-color">Reservar</a>
+            <a href="#reservation" class="btn icon-color btn-lg btn-color">Reservar</a>
           </div>
           <div class="row row-cols-1 row-cols-sm-2 g-4">
             <div class="d-flex flex-column gap-2">
@@ -167,14 +168,45 @@
           <div class="col-md-10 mx-auto col-lg-5">
             <form class="p-4 p-md-5 border rounded-3 bg-light">
               <div class="form-floating mb-3 text-dark">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput text-dark">Correo Electronico</label>
+                <input required type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput text-dark">Nombre</label>
               </div>
               <div class="form-floating mb-3 text-dark">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <input required type="text" class="form-control" id="floatingPassword" placeholder="Password">
                 <label for="floatingInput text-dark">Numero de Celular</label>
               </div>
-              <button class="w-100 btn btn-lg btn-primary icon-color btn-color" type="submit">Reservar</button>
+              <div class="form-floating mb-3 text-dark">
+                <input required id="startDate" class="form-control" type="date" />
+                <label for="startDate">Inicio</label>
+              </div>
+              <div class="form-floating mb-3 text-dark">
+                <input required id="startDate" class="form-control" type="date" />
+                <label for="startDate">Fin</label>
+              </div>
+              <button type="button" class="w-100 btn btn-lg btn-primary icon-color btn-color" data-bs-toggle="modal"
+                data-bs-target="#exampleModal" data-target="#exampleModal">Reservar</button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">Confirmacion de Reservacion</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-dark">
+                      El registro de reserva se ha guardado con exito
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary icon-color btn-color "
+                        data-bs-dismiss="modal">Aceptar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
               <hr class="my-4">
               <small class="text-muted">Al hacer clic en Reservar, acepta los términos de uso.</small>
             </form>
@@ -345,7 +377,26 @@
 
           <!-- Form submit button -->
           <div class="d-grid">
-            <button class="btn btn-lg btn-color icon-color" type="submit">Enviar Mensaje</button>
+            <button class="btn btn-lg btn-color icon-color" type="submit" data-bs-toggle="modal"
+              data-bs-target="#contactModal">Enviar Mensaje</button>
+            <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">Confirmacion de Contacto</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-dark">
+                    Su mensaje ha sido enviado con exito
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary icon-color btn-color "
+                      data-bs-dismiss="modal">Aceptar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
         </form>
@@ -474,11 +525,14 @@
     </footer>
 
   </div>
+  <!-- JavaScript Bundle with Popper -->
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
 
+  <script src="./js/index.js"></script>
 
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
 </html>
