@@ -8,6 +8,8 @@
 @import "./modules/animation.css";
 @import "./modules/icon.css";
 @import "./modules/text.css";
+@import "./modules/variables.css";
+@import "./modules/list.css";
 
 .bg-web {
   background: linear-gradient(#9bd7e2, #ecedc3);

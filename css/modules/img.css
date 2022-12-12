@@ -30,6 +30,14 @@
   height: 128px;
 }
 
+.corner-img-5 {
+  position: absolute;
+  top: 320%;
+  right: 0;
+  z-index: -1;
+  height: 128px;
+}
+
 .logo-img {
   width: 256px;
   position: relative;
@@ -43,11 +51,17 @@
   width: 256px;
 }
 
-@media (min-width: 768px) {
+.carousel-img {
+  height: auto;
+  object-fit: none;
+  /* opacity: 0 !important; */
+}
 
+@media (min-width: 768px) {
   .carousel-img {
     height: 512px;
     object-fit: contain;
+    /* opacity: 1 !important; */
   }
 
   .corner-img-1 {
@@ -77,6 +91,14 @@
   .corner-img-4 {
     position: absolute;
     top: 200%;
+    right: 0;
+    z-index: -1;
+    height: auto;
+  }
+
+  .corner-img-5 {
+    position: absolute;
+    top: 320%;
     right: 0;
     z-index: -1;
     height: auto;

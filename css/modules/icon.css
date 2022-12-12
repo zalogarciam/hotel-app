@@ -1,3 +1,27 @@
 .icon-color {
   background-color: rgb(120, 103, 78) !important;
 }
+
+.icon {
+  color: var(--primary-text-color);
+  font-size: 1.75rem;
+}
+
+.icon--menu--color,
+.icon--close--color {
+  color: black;
+  font-size: 3rem;
+}
+
+@media (min-width: 768px) {
+  .icon--menu,
+  .icon--close {
+    display: none;
+  }
+}
+.icon--close {
+  position: absolute;
+  top: calc(var(--padding-nav) + 0.25rem);
+  right: var(--padding-container);
+  transition: top 0.25s;
+}

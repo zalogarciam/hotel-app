@@ -23,13 +23,34 @@
         <div class="logo-img">
           <img src="./img/logo-camana.png" class="logo" alt="">
         </div>
-        <nav class="nav-position w-100 nav nav-masthead float-md-end">
-          <a class="nav-link fw-bold py-1 px-0 active text-dark" aria-current="page" href="#home">Inicio</a>
-          <a class="nav-link fw-bold py-1 px-0 text-dark" href="#features">Servicios</a>
-          <a class="nav-link fw-bold py-1 px-0 text-dark" href="#reservation">Reservas</a>
-          <a class="nav-link fw-bold py-1 px-0 text-dark" href="#gallery">Galeria</a>
-          <a class="nav-link fw-bold py-1 px-0 text-dark" href="#rooms">Habitaciones</a>
-          <a class="nav-link fw-bold py-1 px-0 text-dark" href="#contact">Contacto</a>
+        <nav class="nav nav-position w-100 nav nav-masthead float-md-end">
+          <div class="icon icon--menu" id="nav-menu-icon">
+            <i class="bi bi-list icon icon--menu--color"></i>
+          </div>
+          <ul class="list list--header f-elements f-elements--center f-elements--responsive gap-md" id="list-header">
+            <li class="icon--close list--color ml-3">
+              <i class="bi bi-x-circle icon icon--close--color" id="icon-close"></i>
+            </li>
+            <li class="list--item">
+              <a class="list--color nav-link fw-bold py-1 px-0 active text-dark" aria-current="page"
+                href="#home">Inicio</a>
+            </li>
+            <li class="list--item">
+              <a class="list--color nav-link fw-bold py-1 px-0 text-dark" href="#features">Servicios</a>
+            </li>
+            <li class="list--item">
+              <a class="list--color nav-link fw-bold py-1 px-0 text-dark" href="#reservation">Reservas</a>
+            </li>
+            <li class="list--item">
+              <a class="list--color nav-link fw-bold py-1 px-0 text-dark" href="#gallery">Galeria</a>
+            </li>
+            <li class="list--item">
+              <a class="list--color nav-link fw-bold py-1 px-0 text-dark" href="#rooms">Habitaciones</a>
+            </li>
+            <li class="list--item">
+              <a class="list--color nav-link fw-bold py-1 px-0 text-dark" href="#contact">Contacto</a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -41,7 +62,7 @@
         ubicamos a
         una cuadra de la plaza de la playa de Camana</p>
 
-      <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="false">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
@@ -93,6 +114,9 @@
       <div>
         <img class="corner-img-4" src="./img/corner4.png" alt="">
       </div>
+      <div>
+        <img class="corner-img-5" src="./img/corner2.svg" alt="">
+      </div>
       <p class="lead mt-5">
         <a href="#reservation" class="btn btn-lg btn-secondary fw-bold bg-white icon-color btn-color">Reservar
           ahora</a>
@@ -104,7 +128,7 @@
         <h2 class="pb-2 border-bottom text-dark">Nuestros Servicios</h2>
 
         <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
-          <div class="d-flex flex-column align-items-start gap-2">
+          <div class="d-flex flex-column align-items-center gap-2">
             <h3 class="fw-bold text-dark">Ofrecemos servicios de calidad a todos nuestros clientes</h3>
             <p class="text-muted justify-text">Los servicios básicos incluyen el alojamiento y las comidas.
               El
@@ -115,7 +139,7 @@
             <a href="#reservation" class="btn icon-color btn-lg btn-color">Reservar</a>
           </div>
           <div class="row row-cols-1 row-cols-sm-2 g-4">
-            <div class="d-flex flex-column gap-2">
+            <div class="d-flex flex-column gap-2 align-items-center">
               <div
                 class="feature-icon-small d-inline-flex align-items-center justify-content-center icon-color bg-gradient fs-4 rounded-3">
                 <i class="bi bi-droplet"></i>
@@ -124,7 +148,7 @@
               <p class="text-muted text-dark">Disfruta de nuestra piscina en forma de Guitarra</p>
             </div>
 
-            <div class="d-flex flex-column gap-2">
+            <div class="d-flex flex-column gap-2 align-items-center">
               <div
                 class="feature-icon-small d-inline-flex align-items-center justify-content-center icon-color bg-gradient fs-4 rounded-3">
                 <i class="bi bi-buildings"></i>
@@ -133,7 +157,7 @@
               <p class="text-muted text-dark">Habitaciones y Departamentos para familas grandes o pequeñas</p>
             </div>
 
-            <div class="d-flex flex-column gap-2">
+            <div class="d-flex flex-column gap-2 align-items-center">
               <div
                 class="feature-icon-small d-inline-flex align-items-center justify-content-center icon-color bg-gradient fs-4 rounded-3">
                 <i class="bi bi-wifi"></i>
@@ -142,7 +166,7 @@
               <p class="text-muted text-dark">Internet estable de alta velocidad </p>
             </div>
 
-            <div class="d-flex flex-column gap-2">
+            <div class="d-flex flex-column gap-2 align-items-center">
               <div
                 class="feature-icon-small d-inline-flex align-items-center justify-content-center icon-color bg-gradient fs-4 rounded-3">
                 <i class="bi bi-car-front"></i>
