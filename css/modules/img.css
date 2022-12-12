@@ -44,6 +44,7 @@
 }
 
 @media (min-width: 768px) {
+
   .carousel-img {
     height: 512px;
     object-fit: contain;

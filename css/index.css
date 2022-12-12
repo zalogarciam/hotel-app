@@ -4,8 +4,10 @@
 @import "./modules/features.css";
 @import "./modules/form.css";
 @import "./modules/layout.css";
-
+@import "./modules/button.css";
 @import "./modules/animation.css";
+@import "./modules/icon.css";
+@import "./modules/text.css";
 
 .bg-web {
   background: linear-gradient(#9bd7e2, #ecedc3);

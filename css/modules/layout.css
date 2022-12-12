@@ -1,5 +1,5 @@
 .f-elements {
-  display: flex;
+  display: flex !important;
 }
 
 .f-elements--header {
