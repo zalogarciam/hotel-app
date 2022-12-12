@@ -8,8 +8,5 @@
 @import "./modules/animation.css";
 
 .bg-web {
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  background-position: center;
+  background: linear-gradient(#9bd7e2, #ecedc3);
 }

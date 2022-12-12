@@ -1,4 +1,93 @@
-.carousel-img {
-  height: 512px;
-  object-fit: contain;
+.corner-img-1 {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  z-index: -1;
+  height: 128px;
+}
+
+.corner-img-2 {
+  position: absolute;
+  top: 155%;
+  left: 0;
+  z-index: -1;
+  height: 128px;
+}
+
+.corner-img-3 {
+  position: absolute;
+  top: 80%;
+  right: 0;
+  z-index: -1;
+  height: 128px;
+}
+
+.corner-img-4 {
+  position: absolute;
+  top: 200%;
+  right: 0;
+  z-index: -1;
+  height: 128px;
+}
+
+.logo-img {
+  width: 256px;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  width: 256px;
+}
+
+@media (min-width: 768px) {
+  .carousel-img {
+    height: 512px;
+    object-fit: contain;
+  }
+
+  .corner-img-1 {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    z-index: -1;
+    height: auto;
+  }
+
+  .corner-img-2 {
+    position: absolute;
+    top: 155%;
+    left: 0;
+    z-index: -1;
+    height: auto;
+  }
+
+  .corner-img-3 {
+    position: absolute;
+    top: 80%;
+    right: 0;
+    z-index: -1;
+    height: auto;
+  }
+
+  .corner-img-4 {
+    position: absolute;
+    top: 200%;
+    right: 0;
+    z-index: -1;
+    height: auto;
+  }
+
+  .logo-img {
+    width: auto;
+    position: absolute;
+  }
+
+  .logo {
+    width: 256px;
+    z-index: -1;
+  }
 }
