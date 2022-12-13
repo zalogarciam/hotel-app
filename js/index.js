@@ -41,3 +41,12 @@ navMenuIcon.addEventListener('click', () => {
     carouselExampleCaptions.style.opacity = 0;
     listHeader.classList.add('list--header-show');
 });
+
+
+document.getElementById("list-header").addEventListener("click",function(e) {
+  console.log(e.target.nodeName)
+  if (e.target && e.target.nodeName ==="A") {
+    carouselExampleCaptions.style.opacity = 1;
+    listHeader.classList.remove('list--header-show');
+  }
+});
