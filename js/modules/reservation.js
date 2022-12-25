@@ -17,9 +17,8 @@ const reservation = async () => {
     const name = form.name.value;
     const phone = form.phone.value;
     const room = form.room.value;
-    const startDate = form.startDate.value;
-    const endDate = form.endDate.value;
-
+    const startDate = moment(form.startDate.value).format("DD-MM-YYYY");
+    const endDate = moment(form.endDate.value).format("DD-MM-YYYY");
     console.log(room);
     localStorage.setItem(
       name + phone,

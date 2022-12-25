@@ -22,7 +22,7 @@ export const renderReservations = (data) => {
       );
   });
 
-  for (var i = 0; i < localStorage.length; i++) {
+  for (var i = localStorage.length - 1; i >= 0; i--) {
     var item = localStorage.getItem(localStorage.key(i));
     var json = JSON.parse(item);
     $("#reservationTable")
