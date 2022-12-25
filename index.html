@@ -190,17 +190,19 @@
               confirme que todos los datos son correctos. Estaremos en contacto con usted.</p>
           </div>
           <div class="col-md-10 mx-auto col-lg-5">
-            <form class="p-4 p-md-5 border rounded-3 bg-light">
+            <form id="reservationForm" class="p-4 p-md-5 border rounded-3 bg-light">
               <div class="form-floating mb-3 text-dark">
-                <input required type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <input required type="text" name="name" class="form-control" id="floatingInput"
+                  placeholder="name@example.com">
                 <label for="floatingInput text-dark">Nombre</label>
               </div>
               <div class="form-floating mb-3 text-dark">
-                <input required type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                <input required type="text" name="phone" class="form-control" id="floatingPassword"
+                  placeholder="Password">
                 <label for="floatingInput text-dark">Numero de Celular</label>
               </div>
               <div class="form-floating mb-3 text-dark">
-                <select class="form-select">
+                <select class="form-select" name="room">
                   <option value="0" selected>Simple</option>
                   <option value="1">Doble</option>
                   <option value="2">Departamento</option>
@@ -208,15 +210,14 @@
               </div>
 
               <div class="form-floating mb-3 text-dark">
-                <input required id="startDate" class="form-control" type="date" />
+                <input required id="startDate" name="startDate" class="form-control" type="date" />
                 <label for="startDate">Inicio</label>
               </div>
               <div class="form-floating mb-3 text-dark">
-                <input required id="startDate" class="form-control" type="date" />
+                <input required id="startDate" name="endDate" class="form-control" type="date" />
                 <label for="startDate">Fin</label>
               </div>
-              <button type="button" class="w-100 btn btn-lg btn-primary icon-color btn-color" data-bs-toggle="modal"
-                data-bs-target="#exampleModal" data-target="#exampleModal">Reservar</button>
+              <button type="submit" class="w-100 btn btn-lg btn-primary icon-color btn-color">Reservar</button>
 
               <!-- Modal -->
               <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -238,10 +239,54 @@
                 </div>
               </div>
 
+              <!-- Modal -->
+              <div class="modal fade" id="reservationModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">Informacion de Reservaciones</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-dark">
+                      Reservas Mes Diciembre
+                      <div id="infoReservationDiv">
+                        <div>
+                          <table id="reservationTable" class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Celular</th>
+                                <th scope="col">Habitacion</th>
+                                <th scope="col">Fecha Inicio</th>
+                                <th scope="col">Fecha FIn</th>
+                              </tr>
+                            </thead>
+                            <tbody id="bodyReservations">
+
+
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary icon-color btn-color "
+                        data-bs-dismiss="modal">Aceptar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
               <hr class="my-4">
               <small class="text-muted">Al hacer clic en Reservar, acepta los términos de uso.</small>
             </form>
+            <div>
+              <button id="reservationId" type="submit"
+                class="w-100 btn btn-lg btn-primary icon-color btn-color">Informacion de Reservas</button>
+            </div>
+
           </div>
         </div>
       </div>
@@ -558,11 +603,14 @@
 
   </div>
   <!-- JavaScript Bundle with Popper -->
+  <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
-
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
   <script src="./js/index.js" type="module"></script>
 
 </body>
