@@ -3,7 +3,6 @@ const contact = async () => {
 
   const contactFormSubmit = async (e) => {
     e.preventDefault();
-    console.log("test");
     $("#contactModal").modal("show");
   };
 
