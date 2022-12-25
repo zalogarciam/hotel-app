@@ -42,7 +42,6 @@ navMenuIcon.addEventListener('click', () => {
     listHeader.classList.add('list--header-show');
 });
 
-
 document.getElementById("list-header").addEventListener("click",function(e) {
   console.log(e.target.nodeName)
   if (e.target && e.target.nodeName ==="A") {

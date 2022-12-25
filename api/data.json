@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Gonzalo Garcia",
+    "phone": "957247055",
+    "room": "Simple",
+    "startDate": "12/25/2022",
+    "endDate": "12/07/2023"
+  },
+  {
+    "id": 2,
+    "name": "Grace Correa",
+    "phone": "952365748",
+    "room": "Doble",
+    "startDate": "01/07/2023",
+    "endDate": "19/07/2023"
+  },
+  {
+    "id": 3,
+    "name": "Carlos Torres",
+    "phone": "958412366",
+    "room": "Doble",
+    "startDate": "20/03/2023",
+    "endDate": "22/03/2023"
+  },
+  {
+    "id": 1,
+    "name": "Bertha Martinez",
+    "phone": "988563221",
+    "room": "Departamento",
+    "startDate": "26/06/2022",
+    "endDate": "30/06/2023"
+  },
+  {
+    "id": 1,
+    "name": "Roberto Arias",
+    "phone": "952333011",
+    "room": "Departamento",
+    "startDate": "25/08/2022",
+    "endDate": "01/09/2023"
+  }
+]
