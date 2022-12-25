@@ -197,7 +197,7 @@
                 <label for="floatingInput text-dark">Nombre</label>
               </div>
               <div class="form-floating mb-3 text-dark">
-                <input required type="text" name="phone" class="form-control" id="floatingPassword"
+                <input required type="number" name="phone" class="form-control" id="floatingPassword"
                   placeholder="Password">
                 <label for="floatingInput text-dark">Numero de Celular</label>
               </div>
@@ -239,6 +239,24 @@
                 </div>
               </div>
 
+              <!-- Error Modal -->
+              <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">Error en la Reservacion</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-dark">
+                      La fecha de Inicio tiene que ser menor que la fecha de Fin
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Aceptar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <!-- Modal -->
               <div class="modal fade" id="reservationModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">

@@ -19,16 +19,16 @@ const reservation = async () => {
     const room = form.room.value;
     const startDate = moment(form.startDate.value).format("DD-MM-YYYY");
     const endDate = moment(form.endDate.value).format("DD-MM-YYYY");
-    console.log(room);
-    localStorage.setItem(
-      name + phone,
-      JSON.stringify({ name, phone, room, startDate, endDate })
-    );
 
-    const data = await fetchReservations();
-    renderReservations(data);
-
-    $("#exampleModal").modal("show");
+    if (startDate > endDate) {
+      $("#errorModal").modal("show");
+    } else {
+      localStorage.setItem(
+        name + phone,
+        JSON.stringify({ name, phone, room, startDate, endDate })
+      );
+      $("#exampleModal").modal("show");
+    }
   };
 
   form.addEventListener("submit", makeReservation);
