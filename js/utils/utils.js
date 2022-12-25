@@ -18,7 +18,17 @@ export const renderReservations = (data) => {
     $("#reservationTable")
       .find("tbody")
       .append(
-        `<tr><td>${id}</td><td> ${name}</td><td>${phone}</td><td>${room}</td><td>${startDate}</td><td>${endDate}</td></tr>`
+        `<tr><td> ${name}</td><td>${phone}</td><td>${room}</td><td>${startDate}</td><td>${endDate}</td></tr>`
       );
   });
+
+  for (var i = 0; i < localStorage.length; i++) {
+    var item = localStorage.getItem(localStorage.key(i));
+    var json = JSON.parse(item);
+    $("#reservationTable")
+      .find("tbody")
+      .append(
+        `<tr><td> ${json["name"]}</td><td>${json["phone"]}</td><td>${json["room"]}</td><td>${json["startDate"]}</td><td>${json["endDate"]}</td></tr>`
+      );
+  }
 };

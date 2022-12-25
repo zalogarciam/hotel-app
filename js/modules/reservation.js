@@ -13,16 +13,23 @@ const reservation = async () => {
   const makeReservation = async (e) => {
     e.preventDefault();
 
-    const data = await fetchReservations();
-    console.log(data);
-
+    console.log(form);
     const name = form.name.value;
     const phone = form.phone.value;
     const room = form.room.value;
     const startDate = form.startDate.value;
-    const endData = form.endDate.value;
+    const endDate = form.endDate.value;
+
+    console.log(room);
+    localStorage.setItem(
+      name + phone,
+      JSON.stringify({ name, phone, room, startDate, endDate })
+    );
+
+    const data = await fetchReservations();
+    renderReservations(data);
+
     $("#exampleModal").modal("show");
-    console.log("Reservation");
   };
 
   form.addEventListener("submit", makeReservation);

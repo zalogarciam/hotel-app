@@ -202,10 +202,10 @@
                 <label for="floatingInput text-dark">Numero de Celular</label>
               </div>
               <div class="form-floating mb-3 text-dark">
-                <select class="form-select" name="room">
-                  <option value="0" selected>Simple</option>
-                  <option value="1">Doble</option>
-                  <option value="2">Departamento</option>
+                <select class="form-select" id="room" name="room">
+                  <option value="Simple" selected>Simple</option>
+                  <option value="Doble">Doble</option>
+                  <option value="Departamento">Departamento</option>
                 </select> <label for="floatingInput text-dark">Habitacion</label>
               </div>
 
@@ -214,8 +214,8 @@
                 <label for="startDate">Inicio</label>
               </div>
               <div class="form-floating mb-3 text-dark">
-                <input required id="startDate" name="endDate" class="form-control" type="date" />
-                <label for="startDate">Fin</label>
+                <input required id="endDate" name="endDate" class="form-control" type="date" />
+                <label for="endDate">Fin</label>
               </div>
               <button type="submit" class="w-100 btn btn-lg btn-primary icon-color btn-color">Reservar</button>
 
@@ -255,7 +255,6 @@
                           <table id="reservationTable" class="table">
                             <thead>
                               <tr>
-                                <th scope="col">#</th>
                                 <th scope="col">Nombre</th>
                                 <th scope="col">Celular</th>
                                 <th scope="col">Habitacion</th>

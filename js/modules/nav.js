@@ -7,10 +7,6 @@ const nav = () => {
     "carouselExampleCaptions"
   );
 
-  // const navMenuIcon = document.querySelector('#nav-menu-icon');
-  console.log(navCloseIcon);
-  console.log(navMenuIcon);
-
   document.addEventListener("scroll", () => {
     nav.classList.toggle("nav--scroll", window.scrollY > 0);
   });
